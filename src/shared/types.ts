@@ -9,3 +9,10 @@ export type ButtonProps = {
     disabled?: boolean;
     addClasses?: string;
 }
+
+export type IconButtonProps = {
+    onClick?: () => void;
+    disabled?: boolean;
+    icon?: React.ReactNode;
+    addClasses?: string;
+}
