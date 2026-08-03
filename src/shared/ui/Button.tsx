@@ -1,9 +1,10 @@
 import type {ButtonProps} from "../types.ts";
 
-const Button = ({label, onClick, disabled=false, addClasses="bg-cf-dark-gray"}:ButtonProps) => {
+const Button = ({label, onClick, disabled=false, addClasses=""}:ButtonProps) => {
     return (
         <>
-            <button className={`disabled:bg-cf-gray text-white py-2 px-4 ${addClasses}`}
+            <button  className={`bg-cf-dark-gray opacity-90 hover:opacity-100 
+        text-white px-4 py-2 rounded cursor-pointer ` + addClasses}
                     onClick={onClick} disabled={disabled}>
                 {label}
             </button>
